@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <!...Link to main css file...>
+    <link rel="stylesheet" href="style.css">
+    <!..Link to Fontawesome Icons offline...>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <p class="logo">Atafi jr.</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="images/pic18.png" id="icon">
+    
+            <a href="#" class="btn">Hire Me</a>
+        </nav>
+    </div>
+    <div class="detail">
+        <h1>Hey, I'm <span>Atafi Jr.</span></h1>
+        <p>This is my official Website. You can access all my details and <br>
+        work experience in web development here.</p>
+        <a href="file:///D:/practicals/Portfolio%20Website/cv.html" class="btn">Download CV</a>
+    </div>
+    <div class="images">
+        <div class="bg-img">
+            <img src="images/pic15.png" alt="">
+        </div>
+        <div class="main-img">
+            <img src="images/pic16.png" alt="">
+        </div>  
+    </div>
+   
+    <script>
+
+        var icon = document.getElementById("icon");
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/pic19.png";
+            }else{
+                icon.src = "images/pic18.png";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+:root{
+    --primary-color: #eff4fe;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+body{
+   overflow: hidden;
+}
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;   
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.logo::first-letter{
+    font-size: 48px;
+    border: 2px solid var(--secondary-color);
+    border-right: 2px solid transparent;
+    color: #ff4323;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+    color: var(--secondary-color);
+    padding: 5px 0;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ff4323;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ff4323;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    background: #ff4323;
+    border: 2px solid #ff4323;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: transparent;
+    color: #ff4323;
+}
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 100px;
+}
+.detail h1{
+    color: var(--secondary-color);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.detail h1 span{
+    color: #ff4323;
+}
+.detail p{
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.images .bg-img{
+    width: 35%;
+    position: absolute;
+    right: 200px;
+    top: 15%;
+    transform: rotate(220deg);
+}
+.images .bg-img img{
+    display: block;
+    width: 100%;
+}
+.images .main-img{
+    width: 28%;
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+}
+.images .main-img img{
+    display: block;
+    width: 100%;
+}
+
